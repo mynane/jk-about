@@ -2,7 +2,7 @@ import "./main.less";
 
 const App = () => (
   <div className="app" id="app">
-    nihaoshijinahu
+    无线投屏
   </div>
 );
 
