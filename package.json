@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "icon": "icon-prompt",
   "scripts": {
     "dev": "node ./local-server.js",
     "build": "next build && next export -o build/dist && npm run zip",
