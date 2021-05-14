@@ -1,0 +1,20 @@
+{
+  "name": "jk-about",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynane/jk-about.git"
+  },
+  "keywords": [],
+  "author": "”石进华“",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mynane/jk-about/issues"
+  },
+  "homepage": "https://github.com/mynane/jk-about#readme"
+}
