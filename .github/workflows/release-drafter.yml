@@ -18,4 +18,4 @@ jobs:
       - uses: toolmantim/release-drafter@v5.2.0
         name: Draft
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
