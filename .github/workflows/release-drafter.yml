@@ -19,8 +19,11 @@ jobs:
       #   name: Draft
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-      - uses: AButler/upload-release-assets@v2.0
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          files: 'index.html'
-          repo-token: ${{ secrets.GITHUBTOKEN }}
-          release-tag: ${{ steps.get_version.outputs.VERSION }}
+          repo_token: ${{ secrets.GITHUBTOKEN }}
+          file: index.html
+          # asset_name: mything
+          tag: ${{ github.ref }}
+          overwrite: true
