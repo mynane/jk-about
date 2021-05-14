@@ -19,9 +19,7 @@ jobs:
         name: Draft
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-      - name: Upload release binaries
-        uses: alexellis/upload-assets@0.2.2
-        env:
-          GITHUB_TOKEN: ${{ github.GITHUBTOKEN }}
+      - uses: AButler/upload-release-assets@v2.0
         with:
-          asset_paths: '["./index.html"]'
+          files: 'index.html'
+          repo-token: ${{ secrets.GITHUBTOKEN }}
