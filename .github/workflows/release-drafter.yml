@@ -1,9 +1,14 @@
 name: Release Drafter
 
+# on:
+#   push:
+#     branches:
+#       - master # 在 master 分支发生更新时执行此 action
+
 on:
   push:
-    branches:
-      - master # 在 master 分支发生更新时执行此 action
+    tags:
+      - "v*"
 
 jobs:
   draft_release:
